@@ -1,0 +1,59 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-04-01 12:36:09.983644",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "car",
+  "price_per_day",
+  "price_per_km",
+  "driver_required",
+  "driver_charge"
+ ],
+ "fields": [
+  {
+   "fieldname": "car",
+   "fieldtype": "Link",
+   "label": "Car",
+   "options": "Car"
+  },
+  {
+   "fieldname": "price_per_day",
+   "fieldtype": "Currency",
+   "label": "Price Per Day"
+  },
+  {
+   "fieldname": "price_per_km",
+   "fieldtype": "Currency",
+   "label": "Price Per KM"
+  },
+  {
+   "fieldname": "driver_required",
+   "fieldtype": "Select",
+   "label": "Driver Required",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "driver_charge",
+   "fieldtype": "Currency",
+   "label": "Driver Charge"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-04-01 12:39:51.888620",
+ "modified_by": "Administrator",
+ "module": "Car Rental",
+ "name": "Booking Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
