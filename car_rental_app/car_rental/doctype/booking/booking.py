@@ -17,10 +17,10 @@ class Booking(Document):
 
         total = 0  
 
-        # Loop through child table
+        
         for row in self.cars:
 
-            # 🔹 Per Day Calculation
+           
             if self.calculation_type == "Per Day":
 
                 if self.from_date and self.to_date and row.car:
@@ -35,19 +35,19 @@ class Booking(Document):
                     if price:
                         total += days * price   
 
-                    # Driver charge (optional)
+                    
                     if row.driver_required == "Yes" and row.driver_charge:
                         total += days * row.driver_charge
 
 
-            # 🔹 Per KM Calculation
+            
             elif self.calculation_type == "Per KM":
 
                 if self.distance and row.price_per_km:
 
                     total += self.distance * row.price_per_km
 
-                    # Driver charge (optional)
+                    
                     if row.driver_required == "Yes" and row.driver_charge:
                         total += row.driver_charge
 
